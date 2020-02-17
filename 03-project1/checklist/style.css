@@ -1,0 +1,7 @@
+.completed {
+  text-decoration: line-through;
+  background: rgb(231, 110, 110);
+}
+button {
+  display: none;
+}

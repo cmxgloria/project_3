@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        border: 1px solid red;
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; */
+        display: grid;
+        /* grid-template-columns: repeat(6, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* how many write how many columns in one session */
+        grid-gap: 5px;
+        grid-template-areas:
+          "h h h h"
+          "s c c c"
+          "s c c c"
+          "f f f f";
+      }
+      .header {
+        grid-area: h;
+      }
+      .bar {
+        grid-area: s;
+      }
+      .content {
+        grid-area: c;
+      }
+      .footer {
+        grid-area: f;
+      }
+    </style>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="bar">side</div>
+      <div class="content">content</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
+<!-- flex box good for one row or column; grid good for multi rows and column -->
+<!-- another way to deal with grid -->
+<!-- <style>
+ .container {
+  border: 1px solid red;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* how many write how many columns in one session */
+  grid-gap: 5px;
+}
+/* parent div only control direct child div */
+.box {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+</style> -->

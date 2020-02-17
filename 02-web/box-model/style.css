@@ -1,0 +1,26 @@
+.two {
+  font-size: 30px;
+}
+a {
+  /* display: inline; */
+  display: inline-block;
+  width: 100px;
+}
+.left {
+  background-color: aqua;
+  width: 50%;
+}
+.right {
+  background-color: lightpink;
+  width: 50%;
+}
+/* if left and right take 50% each, it became two line */
+.left,
+.right {
+  display: inline-block;
+}
+.flex-container {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
